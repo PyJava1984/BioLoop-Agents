@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ClimateRiskForecast",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "forecast": {
+      "type": "object",
+      "properties": {
+        "temperature_c": { "type": "number" },
+        "humidity_pct": { "type": "number", "minimum": 0, "maximum": 100 },
+        "air_quality_index": { "type": "integer", "minimum": 0 },
+        "pm25": { "type": "number", "minimum": 0 },
+        "pm10": { "type": "number", "minimum": 0 },
+        "extreme_event": {
+          "type": "string",
+          "enum": [
+            "none",
+            "heatwave",
+            "coldwave",
+            "flood",
+            "wildfire-smoke",
+            "storm",
+            "drought"
+          ]
+        }
+      },
+      "required": ["temperature_c", "air_quality_index"]
+    },
+    "region": {
+      "type": "string"
+    },
+    "hospital_context": {
+      "type": "object",
+      "properties": {
+        "asthma_patient_count": { "type": "integer", "minimum": 0 },
+        "respiratory_capacity": { "type": "integer", "minimum": 0 },
+        "icu_capacity": { "type": "integer", "minimum": 0 }
+      }
+    }
+  },
+  "required": ["timestamp", "forecast"]
+}

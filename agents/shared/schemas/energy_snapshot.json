@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "EnergySnapshot",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "hvac": {
+      "type": "object",
+      "properties": {
+        "current_kw": { "type": "number", "minimum": 0 },
+        "target_temp_c": { "type": "number" },
+        "zone_loads": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "zone_id": { "type": "string" },
+              "occupancy": { "type": "integer", "minimum": 0 },
+              "temperature_c": { "type": "number" }
+            },
+            "required": ["zone_id", "occupancy"]
+          }
+        }
+      },
+      "required": ["current_kw"]
+    },
+    "lighting_kw": {
+      "type": "number",
+      "minimum": 0
+    },
+    "sterilization_machines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "machine_id": { "type": "string" },
+          "cycle_status": {
+            "type": "string",
+            "enum": ["idle", "running", "cooldown", "error"]
+          },
+          "kw_usage": { "type": "number", "minimum": 0 }
+        },
+        "required": ["machine_id", "cycle_status"]
+      }
+    },
+    "grid_carbon_intensity_g_per_kwh": {
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "required": ["timestamp", "hvac"]
+}

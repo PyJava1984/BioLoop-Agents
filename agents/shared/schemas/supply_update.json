@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SupplyUpdate",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "supply_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "item_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": ["PPE", "Pharmaceutical", "Consumable", "Equipment", "Sterilization", "Other"]
+          },
+          "current_stock": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "daily_usage_rate": {
+            "type": "number",
+            "minimum": 0
+          },
+          "expiration_date": {
+            "type": "string",
+            "format": "date"
+          }
+        },
+        "required": ["item_id", "name", "current_stock"]
+      }
+    },
+    "storage_temperature_c": {
+      "type": "number"
+    },
+    "alerts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["timestamp", "supply_items"]
+}
