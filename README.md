@@ -1,11 +1,11 @@
 ```markdown
-# 🧬 BioLoop Agents
+# BioLoop Agents
 ### *Autonomous Circular-Care System for Sustainable Hospitals*  
 Built with **Gemini**, **Google Agent Developer Kit (ADK)**, **Vertex AI Agent Engine**, **A2A Protocol**, **MCP**, and **NotebookLM**.
 
 ---
 
-# 🌍 Overview
+# Overview
 
 **BioLoop Agents** is a modular multi-agent platform designed to help hospitals simultaneously:
 
@@ -19,7 +19,7 @@ Each agent collaborates via an **Agent-to-Agent (A2A)** protocol and a **Multi-A
 
 ---
 
-# 🧠 Agent Ecosystem
+# Agent Ecosystem
 
 ### **1. CareFlow Agent**
 Optimizes patient flow, predicts bottlenecks, and reduces unnecessary material use.  
@@ -44,7 +44,7 @@ Analyzes weather + climate forecasts, predicts clinically relevant surges, and t
 
 ---
 
-# 🧩 Core Technologies
+# Core Technologies
 
 | Component | Purpose |
 |----------|---------|
@@ -60,7 +60,7 @@ Analyzes weather + climate forecasts, predicts clinically relevant surges, and t
 
 ---
 
-# 🚀 Quick Start
+# Quick Start
 
 ## 1. Clone Repository
 ```bash
@@ -70,7 +70,7 @@ cd bioloop-agents
 
 ---
 
-# 🛠 Prerequisites
+# Prerequisites
 
 * **Google Cloud Project** (billing enabled)
 * **gcloud** CLI installed
@@ -85,7 +85,7 @@ gcloud services enable aiplatform.googleapis.com \
 
 ---
 
-# 📡 Set Up Pub/Sub Topics
+# Set Up Pub/Sub Topics
 
 From `infra/`:
 
@@ -102,7 +102,7 @@ Creates:
 
 ---
 
-# 🧪 Local Development
+# Local Development
 
 Run any agent locally:
 
@@ -125,7 +125,7 @@ curl -X POST http://localhost:8081/a2a \
 
 ---
 
-# ☁️ Deployment to Cloud Run
+# Deployment to Cloud Run
 
 Deploy all agents:
 
@@ -142,7 +142,7 @@ This will:
 
 ---
 
-# 🤖 Register with Vertex AI Agent Engine
+# Register with Vertex AI Agent Engine
 
 Update `vertex_agent.yaml` with Cloud Run URLs, then:
 
@@ -152,7 +152,7 @@ gcloud alpha agent-engines deploy bioloop-system --config vertex_agent.yaml
 
 ---
 
-# 📘 NotebookLM Integration
+# NotebookLM Integration
 
 Each agent can call NotebookLM for knowledge-backed decision-making.
 
@@ -169,7 +169,7 @@ NotebookLM stores:
 
 ---
 
-# 🔗 Agent-to-Agent Messaging (A2A)
+# Agent-to-Agent Messaging (A2A)
 
 Agents send structured messages:
 
@@ -194,7 +194,7 @@ agents/shared/a2a_protocol.py
 
 ---
 
-# 🛰 Multi-Agent Control Plane (MCP)
+# Multi-Agent Control Plane (MCP)
 
 Agents broadcast higher-level events:
 
@@ -207,7 +207,7 @@ Hospitals may subscribe dashboards, reporting systems, or automation to MCP chan
 
 ---
 
-# 📊 Dashboards (Optional)
+# Dashboards (Optional)
 
 Integrate with:
 
@@ -217,7 +217,7 @@ Integrate with:
 
 ---
 
-# 🔒 Security & Compliance
+# Security & Compliance
 
 * Cloud Run sandbox isolation
 * HTTPS-only communication
@@ -233,7 +233,7 @@ HIPAA/GDPR support available through:
 
 ---
 
-# 🧩 Extending the Platform
+# Extending the Platform
 
 Create new agents:
 
@@ -258,7 +258,7 @@ Examples:
 
 ---
 
-# 🧪 Testing
+# Testing
 
 Run unit tests:
 
