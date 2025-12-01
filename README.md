@@ -1,7 +1,3 @@
-Here is the **exact same README**, delivered as **GitHub-ready Markdown code**, with **no extra commentary**, so you can copy/paste directly into `README.md`.
-
----
-
 ```markdown
 # 🧬 BioLoop Agents
 ### *Autonomous Circular-Care System for Sustainable Hospitals*  
