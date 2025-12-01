@@ -64,7 +64,7 @@ Analyzes weather + climate forecasts, predicts clinically relevant surges, and t
 
 ## 1. Clone Repository
 ```bash
-git clone https://github.com/YOUR_ORG/bioloop-agents.git
+git clone https://github.com/PyJava1984/bioloop-agents.git
 cd bioloop-agents
 ````
 
