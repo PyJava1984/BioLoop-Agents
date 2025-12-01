@@ -21,25 +21,25 @@ Each agent collaborates via an Agent-to-Agent (A2A) protocol and a Multi-Agent C
 
 # Agent Ecosystem
 
-#1. CareFlow Agent
+### 1. CareFlow Agent
 Optimizes patient flow, predicts bottlenecks, and reduces unnecessary material use.  
 Receives: `patient-flow` telemetry (Pub/Sub)  
 Sends: staffing + routing suggestions, load signals to EnerSense.
 
 ---
 
-#2. MedCycler Agent
+### 2. MedCycler Agent
 Monitors supply usage, anticipates shortages, recommends lower-footprint alternatives, and reduces expiration waste.  
 Uses NotebookLM to reference sustainability and clinical guidelines.
 
 ---
 
-#3. EnerSense Agent
+### 3. EnerSense Agent
 Optimizes HVAC, lighting, sterilization cycles, and energy schedules without risking patient safety.
 
 ---
 
-#4. GreenRisk Agent
+### 4. GreenRisk Agent
 Analyzes weather + climate forecasts, predicts clinically relevant surges, and triggers staff/supply preparation.
 
 ---
