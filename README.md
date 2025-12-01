@@ -1,6 +1,6 @@
 ```markdown
 # BioLoop Agents
-### Autonomous Circular-Care System for Sustainable Hospitals*  
+### Autonomous Circular-Care System for Sustainable Hospitals
 Built with Gemini, Google Agent Developer Kit (ADK), Vertex AI Agent Engine, A2A Protocol, MCP, and NotebookLM.
 
 ---
@@ -48,15 +48,15 @@ Analyzes weather + climate forecasts, predicts clinically relevant surges, and t
 
 | Component | Purpose |
 |----------|---------|
-| **Gemini 2.0 (Pro / Flash)** | AI reasoning + sustainability-aware decision-making |
-| **ADK (Agent Developer Kit)** | Agent lifecycle, messaging, observability |
-| **Vertex AI Agent Engine** | Orchestration of agent tools + policies |
-| **A2A Protocol** | Inter-agent RPC |
-| **MCP (Multi-Agent Control Plane)** | Event broadcasting & global coordination |
-| **NotebookLM** | Evidence-backed recommendations for clinical + sustainability topics |
-| **Pub/Sub** | Hospital telemetry ingestion |
-| **Cloud Run** | Serverless agent runtime |
-| **Firestore & Cloud Storage** | State tracking + supply logs |
+| Gemini 2.0 (Pro / Flash) | AI reasoning + sustainability-aware decision-making |
+| ADK (Agent Developer Kit) | Agent lifecycle, messaging, observability |
+| Vertex AI Agent Engine | Orchestration of agent tools + policies |
+| A2A Protocol | Inter-agent RPC |
+| MCP (Multi-Agent Control Plane) | Event broadcasting & global coordination |
+| NotebookLM | Evidence-backed recommendations for clinical + sustainability topics |
+| Pub/Sub | Hospital telemetry ingestion |
+| Cloud Run | Serverless agent runtime |
+| Firestore & Cloud Storage | State tracking + supply logs |
 
 ---
 
