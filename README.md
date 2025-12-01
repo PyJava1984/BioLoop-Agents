@@ -60,51 +60,6 @@ Analyzes weather + climate forecasts, predicts clinically relevant surges, and t
 
 ---
 
-# 🏗 Architecture Diagram
-
-```
-
-NotebookLM — evidence + guidelines
-▲
-│
-┌───────┴────────────────┐
-│      MCP Control Plane │
-└───────┬─────┬─────────┘
-│     │
-▼     ▼
-CareFlow ←→ MedCycler ←→ EnerSense ←→ GreenRisk
-▲         ▲            ▲            ▲
-│         │            │            │
-Patient Flow   │       HVAC + IoT        Climate API
-Supply Logs    │
-│
-Hospital EHR / Telemetry
-
-```
-
----
-
-# 📦 Repository Structure
-
-```
-
-bioloop/
-├── agents/
-│   ├── careflow/
-│   ├── medcycler/
-│   ├── enersense/
-│   ├── greenrisk/
-│   └── shared/
-├── infra/
-│   ├── cloudrun_deploy.sh
-│   ├── pubsub_topics.sh
-│   └── terraform/ (optional)
-└── README.md
-
-````
-
----
-
 # 🚀 Quick Start
 
 ## 1. Clone Repository
