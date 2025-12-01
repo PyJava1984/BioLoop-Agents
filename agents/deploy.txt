@@ -1,0 +1,1 @@
+gcloud alpha agent-engines deploy bioloop-system --config vertex_agent.yaml

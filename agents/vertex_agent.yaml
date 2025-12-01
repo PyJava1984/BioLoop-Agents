@@ -1,0 +1,17 @@
+name: "bioloop-system"
+description: "Autonomous sustainability-aware hospital operations layer."
+model: "gemini-2.0-pro"
+
+tools:
+  - type: "pubsub"
+    topic: "patient-flow"
+  - type: "pubsub"
+    topic: "supply-events"
+  - type: "http"
+    url: "https://careflow-agent.run.app/a2a"
+  - type: "http"
+    url: "https://medcycler-agent.run.app/a2a"
+  - type: "http"
+    url: "https://enersense-agent.run.app/a2a"
+  - type: "http"
+    url: "https://greenrisk-agent.run.app/a2a"
